@@ -3,17 +3,20 @@ import styles from './Hero.module.css';
 import flower from '../../../images/hero/flower.png'
 import image from '../../../images/hero/image.jpg'
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const Hero = () => {
+    const { t } = useTranslation("hero");
+
     return (
         <section className={styles.hero_container}>
             <div className={styles.hero_content}>
                 <div className={styles.banner}>
                     <img src={flower} alt="flower"/>
-                    <span className={styles.title}>Welcome to <span style={{color: '#FECE00'}} > MriJa </span> Norway</span>
+                    <span className={styles.title}>{t("welcome")}<span style={{color: '#FECE00'}} > MriJa </span> {t("norway")}</span>
                 </div>
                 <h2 className={styles.subtitle}>
-                    Helping Ukrainians integrate and thrive in Norway through community, education, and support
+                    {t("subtitle")}
                 </h2>
                 <div className={styles.buttons}>
                     <button
@@ -22,11 +25,11 @@ const Hero = () => {
                         el?.scrollIntoView({ behavior: "smooth" });
                          }}
                         className={styles.member_btn}>
-                        Become a Member
+                        {t("become")}
                     </button>
                     <Link to='about-us'>
                         <button className={styles.learn_btn}>
-                            Learn More
+                            {t("learn")}
                         </button>
                     </Link>
 

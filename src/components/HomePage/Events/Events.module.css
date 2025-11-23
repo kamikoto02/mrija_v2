@@ -19,7 +19,7 @@
     margin-bottom: 48px;;
 }
 .image_wrapper {
-    height: 220px;
+    height: 238px;
     width: 380px;
     overflow: hidden;
     display: flex;
@@ -48,6 +48,7 @@
 .card_content {
     padding: 24px;
     text-align: left;
+    max-width: 289px;
 }
 .day, .time {
     font-weight: 500;

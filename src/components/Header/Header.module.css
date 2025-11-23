@@ -109,7 +109,7 @@
 .menu_btn {
     display: none;
 }
-/* Менюшка */
+
 .header_menu {
     display: none;
     position: absolute;
@@ -132,7 +132,8 @@
     max-width: 110px;
     text-align: center;
 }
-.li {
+
+.menu_link {
     font-weight: 600;
     font-size: 20px;
     line-height: 100%;

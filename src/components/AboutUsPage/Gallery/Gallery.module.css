@@ -59,7 +59,11 @@
 }
 @media (max-width: 533px) {
     .gallery_content {
-        max-width: 242px;
+        max-width: 340px;
+    }
+    .image_wrapper {
+        height: 197px;
+        width: 160px;
     }
 }
 

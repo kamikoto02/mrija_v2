@@ -1,0 +1,18 @@
+{
+  "community": "Fellesskapsarrangementer",
+  "title": "Kommende arrangementer",
+  "subtitle": "Knytt kontakt med andre ukrainere og bygg varige vennskap",
+  "button": "Registrer deg nå",
+  "comingSoon": "Kommer snart",
+  "allEventsTitle": "Alle kommende arrangementer",
+  "allEventsSubtitle": "Bla gjennom og meld deg på kommende fellesskapsarrangementer",
+  "memories": "Minner",
+  "pastEventsTitle": "Tidligere arrangementer",
+  "pastEventsSubtitle": "Ta en titt på våre nylige fellesskapssamlinger",
+  "culturalEvening": {
+    "day": "Hver Fredag",
+    "time": "18:00 - 21:00",
+    "name": "Kulturell kveld",
+    "description": "Bli med oss for tradisjonell ukrainsk musikk, mat og fellesskap"
+  }
+}

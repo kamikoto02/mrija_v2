@@ -27,7 +27,7 @@
     margin: 0 auto;
     padding: 0 16px;
     padding-bottom: 64px;
-    max-width: 539px;
+    max-width: 609px;
 }
 .input_wrapper input {
     padding: 14px 16px 14px 60px;
@@ -61,7 +61,7 @@
     border-radius: 10px;
 
 }
-@media (max-width: 537px) {
+@media (max-width: 608px) {
     .input_wrapper {
         margin-right: 0px;
         width: 100%;

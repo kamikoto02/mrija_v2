@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './AllEvents.module.css'
 import eventsArray from "../../HomePage/Events/eventsArray";
+import {useTranslation} from "react-i18next";
 
 const AllEvents = () => {
+    const { t } = useTranslation("events");
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <p className='main-p'>Coming Soon</p>
-                <h2 className={styles.title}>All Upcoming Events</h2>
-                <p className={styles.subtitle}>Browse and register for upcoming community events</p>
+                <p className='main-p'>{t("comingSoon")}</p>
+                <h2 className={styles.title}>{t("allEventsTitle")}</h2>
+                <p className={styles.subtitle}>{t("allEventsSubtitle")}</p>
                 <div className={styles.content}>
                     {eventsArray.map((event, index) => <div className={styles.card}>
                         <div className={styles.image_wrapper}>
@@ -16,14 +18,14 @@ const AllEvents = () => {
                         </div>
                         <div className={styles.card_content}>
                             <div className={styles.duration}>
-                                <span className={styles.date}>{event.day}</span>
-                                <span className={styles.time}>{event.time}</span>
+                                <span className={styles.date}>{t(event.dayKey)}</span>
+                                <span className={styles.time}>{t(event.timeKey)}</span>
                             </div>
-                            <h3 className={styles.name}>{event.name}</h3>
+                            <h3 className={styles.name}>{t(event.nameKey)}</h3>
                             <p className={styles.description}>
-                                {event.description}
+                                {t(event.descriptionKey)}
                             </p>
-                            <button>Register Now</button>
+                            <button>{t("button")}</button>
                         </div>
                     </div>)}
                 </div>

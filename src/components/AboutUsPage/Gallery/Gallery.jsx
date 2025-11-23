@@ -8,16 +8,16 @@ import pic5 from '../../../images/gallery/ece8ef.jpg'
 import pic6 from '../../../images/gallery/f41b16.jpg'
 import pic7 from '../../../images/gallery/f9e38f.jpg'
 import pic8 from '../../../images/gallery/6d126.jpg'
+import {useTranslation} from "react-i18next";
 
 const Gallery = () => {
+    const { t } = useTranslation("gallery");
     return (
         <div className={styles.container}>
-            <p className='main-p'>Our Moments</p>
-            <h2 className={styles.title}>Community Gallery</h2>
+            <p className='main-p'>{t("moments")}</p>
+            <h2 className={styles.title}>{t("title")}</h2>
             <p className={styles.subtitle}>
-                Explore the vibrant moments of our Ukrainian community in Norway.
-                From cultural celebrations to educational programs,
-                these images capture our journey of integration and connection.
+                {t("subtitle")}
             </p>
             <div className={styles.gallery_content}>
                 <div className={styles.image_wrapper}>

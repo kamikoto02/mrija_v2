@@ -96,7 +96,7 @@
 }
 .footer_nav {
     display: flex;
-    width: 382px;
+    max-width: 422px;
     justify-content: space-between;
     padding: 0 4px;
 }
@@ -109,7 +109,7 @@
 .footer_policy {
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    max-width: 400px;
     font-weight: 600;
     font-size: 14px;
     line-height: 100%;
@@ -159,7 +159,9 @@
 
     .footer_policy {
         margin: 25px auto;
+        max-width: 280px;
     }
+
     .mobile_rights {
         max-width: 400px;
         display: inline-block;

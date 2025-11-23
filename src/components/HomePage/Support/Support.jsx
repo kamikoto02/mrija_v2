@@ -5,50 +5,48 @@ import house from '../../../images/support/house.png'
 import job from '../../../images/support/job.png'
 import help from '../../../images/support/help.png'
 import image from "../../../images/support/image.jpg";
+import {useTranslation} from "react-i18next";
 
 const Support = () => {
+    const { t } = useTranslation("support");
     return (
         <section className={styles.support_wrapper}>
             <div className={styles.support_container}>
-                <p className='main-p'>We're Here For You</p>
-                <h2 className={styles.title}>Community Support</h2>
-                <p className={styles.subtitle}>Comprehensive support for your integration journey</p>
+                <p className='main-p'>{t("hereForYou")}</p>
+                <h2 className={styles.title}>{t("title")}</h2>
+                <p className={styles.subtitle}>{t("subtitle")}</p>
                 <div className={styles.support_content}>
                     <div className={styles.card}>
                         <img src={mentor} alt="mentor"/>
-                        <h2 className={styles.card_title}>Mentorship Program</h2>
+                        <h2 className={styles.card_title}>{t("mentorship")}</h2>
                         <p className={styles.card_desc}>
-                            Connect with experienced community members who can
-                            guide you through integration challenges, job search, and everyday life in Norway.
+                            {t("mentorshipDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">Find a Mentor →</a></p>
+                        <p className={styles.card_link}><a href="#">{t("findMentor")}</a></p>
                     </div>
                     <div className={styles.card}>
                         <img src={house} alt="house"/>
-                        <h2 className={styles.card_title}>Housing Assistance</h2>
+                        <h2 className={styles.card_title}>{t("housing")}</h2>
                         <p className={styles.card_desc}>
-                            Guidance on finding accommodation, understanding rental contracts, tenant rights,
-                            and connecting with other community members looking for housing.
+                            {t("housingDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">Learn More →</a></p>
+                        <p className={styles.card_link}><a href="#">{t("learnMore")}</a></p>
                     </div>
                     <div className={styles.card}>
                         <img src={job} alt="job"/>
-                        <h2 className={styles.card_title}>Job Market Support</h2>
+                        <h2 className={styles.card_title}>{t("jobMarket")}</h2>
                         <p className={styles.card_desc}>
-                            Resume workshops, interview preparation, networking events,
-                            and connections to employers looking for skilled Ukrainian professionals.
+                            {t("jobMarketDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">Explore Opportunities →</a></p>
+                        <p className={styles.card_link}><a href="#">{t("explore")}</a></p>
                     </div>
                     <div className={styles.card}>
                         <img src={help} alt="help"/>
-                        <h2 className={styles.card_title}>Legal & Administrative Help</h2>
+                        <h2 className={styles.card_title}>{t("legal")}</h2>
                         <p className={styles.card_desc}>
-                            Get assistance with residence permits, work permits, tax cards,
-                            and navigating Norwegian bureaucracy with our volunteer advisors.
+                            {t("legalDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">Get Help →</a></p>
+                        <p className={styles.card_link}><a href="#">{t("getHelp")}</a></p>
                     </div>
                 </div>
                 <div className={styles.image_wrapper}>

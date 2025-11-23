@@ -3,9 +3,11 @@ import styles from './EventsBanner.module.css';
 import img1 from '../../../images/eventsBanner/1img.jpg'
 import img2 from '../../../images/eventsBanner/3img.jpg'
 import img3 from '../../../images/eventsBanner/2img.jpg'
+import {useTranslation} from "react-i18next";
 
 
 const EventsBanner = () => {
+    const { t } = useTranslation("eventsBanner");
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
@@ -25,9 +27,9 @@ const EventsBanner = () => {
                     </div>
                 </div>
                 <div className={styles.content}>
-                    <span className={styles.span}>Community Events</span>
-                    <h2 className={styles.title}>Upcoming Events</h2>
-                    <p className={styles.subtitle}>Join our vibrant community events and connect with fellow Ukrainians in Norway</p>
+                    <span className={styles.span}>{t("communityEvents")}</span>
+                    <h2 className={styles.title}>{t("title")}</h2>
+                    <p className={styles.subtitle}>{t("subtitle")}</p>
                 </div>
             </div>
         </div>

@@ -6,21 +6,14 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import {pastEventsArray} from "./pastEventsArray";
+import {useTranslation} from "react-i18next";
 
-// массив фоток (подставь свои пути)
-const photos = [
-    "/images/past1.jpg",
-    "/images/past2.jpg",
-    "/images/past3.jpg",
-    "/images/past4.jpg",
-    "/images/past5.jpg",
-    "/images/past6.jpg",
-];
 
 const PastEvents = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
+    const { t } = useTranslation("events");
 
     useEffect(() => {
         if (swiperRef.current) {
@@ -34,9 +27,9 @@ const PastEvents = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <p className="main-p">Memories</p>
-                <h2 className={styles.title}>Past Events</h2>
-                <p className={styles.subtitle}>Take a look at our recent community gatherings</p>
+                <p className="main-p">{t("memories")}</p>
+                <h2 className={styles.title}>{t("pastEventsTitle")}</h2>
+                <p className={styles.subtitle}>{t("pastEventsSubtitle")}</p>
                 <div className={styles.sliderWrapper}>
                     <Swiper
                         modules={[Navigation, Autoplay]}

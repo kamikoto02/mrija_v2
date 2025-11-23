@@ -83,6 +83,9 @@
     color: #12305A;
     margin: 16px 0 20px 0;
 }
+.content {
+    max-width: 581px;
+}
 .subtitle {
     font-weight: 600;
     font-size: 24px;

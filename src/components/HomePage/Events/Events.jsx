@@ -6,11 +6,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import {useTranslation} from "react-i18next";
 
 const Events = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
+    const { t } = useTranslation("events");
 
     useEffect(() => {
         if (swiperRef.current) {
@@ -24,10 +26,10 @@ const Events = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
-                <p className="main-p">Community Events</p>
-                <h2 className={styles.title}>Upcoming Events</h2>
+                <p className="main-p">{t("community")}</p>
+                <h2 className={styles.title}>{t("title")}</h2>
                 <p className={styles.subtitle}>
-                    Connect with fellow Ukrainians and build lasting friendships
+                    {t("subtitle")}
                 </p>
                 <div className={styles.swiperWrapper}>
                     <Swiper
@@ -59,14 +61,14 @@ const Events = () => {
 
                                     <div className={styles.card_content}>
                                         <div className={styles.duration}>
-                                            <span className={styles.day}>{event.day}</span>
-                                            <span className={styles.time}>{event.time}</span>
+                                            <span className={styles.day}>{t(event.dayKey)}</span>
+                                            <span className={styles.time}>{t(event.timeKey)}</span>
                                         </div>
 
-                                        <h3 className={styles.name}>{event.name}</h3>
-                                        <p className={styles.description}>{event.description}</p>
+                                        <h3 className={styles.name}>{t(event.nameKey)}</h3>
+                                        <p className={styles.description}>{t(event.descriptionKey)}</p>
 
-                                        <button className={styles.btn}>Register Now</button>
+                                        <button className={styles.btn}>{t("button")}</button>
                                     </div>
                                 </div>
                             </SwiperSlide>

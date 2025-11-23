@@ -3,8 +3,10 @@ import styles from './Header.module.css';
 import Logo from "../../images/header/Logo.png";
 import close from '../../images/header/icon-btn.png'
 import {Link} from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 const HeaderMenu = ({closeMenu}) => {
+    const { t } = useTranslation("header");
     return (
         <div className={styles.header_menu}>
             <div className={styles.header_menu_container}>
@@ -17,17 +19,17 @@ const HeaderMenu = ({closeMenu}) => {
             </div>
             <nav>
                 <div className={styles.menu_nav_list}>
-                    <button onClick={closeMenu}>
-                        <Link className={styles.li} to='/'>Home</Link>
+                    <button className={styles.menu_link}  onClick={closeMenu}>
+                        <Link className={styles.li} to='/'>{t("home")}</Link>
                     </button>
-                    <button onClick={closeMenu}>
-                        <Link className={styles.li} to='/about-us'>About Us</Link>
+                    <button className={styles.menu_link}  onClick={closeMenu}>
+                        <Link className={styles.li} to='/about-us'>{t("about")}</Link>
                     </button>
-                    <button onClick={closeMenu}>
-                        <Link className={styles.li} to='events'>Events</Link>
+                    <button className={styles.menu_link}  onClick={closeMenu}>
+                        <Link className={styles.li} to='events'>{t("events")}</Link>
                     </button>
-                    <button onClick={closeMenu}>
-                        <li className={styles.li}>Contact</li>
+                    <button className={styles.menu_link}   onClick={closeMenu}>
+                          {t("contact")}
                     </button>
                 </div>
             </nav>

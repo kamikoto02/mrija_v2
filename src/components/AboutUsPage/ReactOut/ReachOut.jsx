@@ -1,24 +1,23 @@
 import React from 'react';
 import styles from './ReachOut.module.css';
+import {useTranslation} from "react-i18next";
 
 const ReachOut = () => {
+    const { t } = useTranslation("reachOut");
     return (
         <div  className={styles.wrapper}>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.row}>
-                        <p className={styles.p}>Want to Host an Event?</p>
-                        <h2 className={styles.title}>Reach out</h2>
-                        <p className={styles.subtitle}>
-                            Do you have an idea for a community event?
-                            We'd love to hear from you! Contact us to discuss hosting your own event.
-                        </p>
+                        <p className={styles.p}>{t("wantToHost")}</p>
+                        <h2 className={styles.title}>{t("title")}</h2>
+                        <p className={styles.subtitle}>{t("subtitle")}</p>
                     </div>
                     <div id='contact' className={styles.form}>
-                        <input type="text" placeholder='Name'/>
-                        <input type="text" placeholder='Email'/>
-                        <textarea placeholder="Message"></textarea>
-                        <button>Send</button>
+                        <input type="text" placeholder={t("name")}/>
+                        <input type="text" placeholder={t("email")}/>
+                        <textarea placeholder={t("message")}></textarea>
+                        <button>{t("send")}</button>
                     </div>
                 </div>
             </div>

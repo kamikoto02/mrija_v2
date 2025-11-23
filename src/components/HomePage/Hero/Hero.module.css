@@ -14,7 +14,8 @@
 }
 .banner {
     position: relative;
-    max-width: 724px;
+    width: fit-content;
+    max-width: 980px;
     background-color: #F9F9F9;
     border-radius: 10px;
     margin: 0 auto;
@@ -47,14 +48,15 @@
 .buttons {
     display: flex;
     margin: 0 auto;
-    max-width: 328px;
-    justify-content: space-between;
+    max-width: 398px;
+    justify-content: center;
 }
 .buttons button {
     font-size: 15px;
     padding: 12px 24px;
     border-radius: 15px;
     font-weight: 700;
+    margin-right: 15px;
 }
 .member_btn {
     background-color: #0057B8;
@@ -89,6 +91,11 @@
 .title {
     display: inline-block;
     font-size: 46px;
+}
+@media (max-width: 1120px) {
+    .banner {
+        max-width: 721px;
+    }
 }
 @media (max-width: 900px) {
     .banner {
@@ -156,9 +163,16 @@
     .banner {
         display: block;
         align-items: center;
-        margin: 0 16px;
+        margin: 0 auto;
     }
     .banner img {
         margin: 0 auto;
+    }
+    .buttons {
+        max-width: 343px;
+
+    }
+    .hero_container {
+        padding: 0 20px 40px 20px;
     }
 }
