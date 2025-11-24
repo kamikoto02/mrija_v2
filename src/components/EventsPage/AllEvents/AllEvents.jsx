@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './AllEvents.module.css'
 import eventsArray from "../../HomePage/Events/eventsArray";
 import {useTranslation} from "react-i18next";
+import {useOutletContext} from "react-router-dom";
 
 const AllEvents = () => {
     const { t } = useTranslation("events");
+    const { openModal } = useOutletContext();
     return (
         <div className={styles.wrapper}>
             <div className={styles.container}>
@@ -25,7 +27,7 @@ const AllEvents = () => {
                             <p className={styles.description}>
                                 {t(event.descriptionKey)}
                             </p>
-                            <button>{t("button")}</button>
+                            <button  onClick={() => openModal({ name: t(event.nameKey)})}>{t("button")}</button>
                         </div>
                     </div>)}
                 </div>

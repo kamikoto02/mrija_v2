@@ -7,11 +7,13 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import {useTranslation} from "react-i18next";
+import {useOutletContext} from "react-router-dom";
 
 const Events = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
+    const { openModal } = useOutletContext();
     const { t } = useTranslation("events");
 
     useEffect(() => {
@@ -68,13 +70,12 @@ const Events = () => {
                                         <h3 className={styles.name}>{t(event.nameKey)}</h3>
                                         <p className={styles.description}>{t(event.descriptionKey)}</p>
 
-                                        <button className={styles.btn}>{t("button")}</button>
+                                        <button onClick={() => openModal({ name: t(event.nameKey)})} className={styles.btn}>{t("button")}</button>
                                     </div>
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
-
                     <button ref={prevRef} className={styles.prevBtn}>
                         ❮
                     </button>

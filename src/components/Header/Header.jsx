@@ -8,6 +8,7 @@ import NorwegianFlag from '../../images/header/Norway (NO).png';
 import menu from '../../images/header/menu.png';
 import HeaderMenu from "./HeaderMenu";
 import { Link } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import i18n from "../../i118n";
 
@@ -57,13 +58,6 @@ const Header = () => {
                         <Link className={styles.link} to='/'>{t("home")}</Link>
                         <Link className={styles.link} to='/about-us'>{t("about")}</Link>
                         <Link className={styles.link} to='/events'>{t("events")}</Link>
-                        <Link
-                            to='/about-us'
-                            state={{ scrollTo: "contact" }}
-                            className={styles.link}
-                        >
-                            <button>{t("contact")}</button>
-                        </Link>
                     </ul>
                 </nav>
 
@@ -120,8 +114,9 @@ const Header = () => {
                     </button>
                 </div>
             </div>
-
-            {isMenuOpen && <HeaderMenu closeMenu={handleMenu} />}
+            <AnimatePresence>
+                {isMenuOpen && <HeaderMenu closeMenu={handleMenu} />}
+            </AnimatePresence>
         </header>
     );
 };

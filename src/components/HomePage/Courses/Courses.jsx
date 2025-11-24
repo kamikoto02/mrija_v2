@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './Courses.module.css';
 import course from "./course";
 import {useTranslation} from "react-i18next";
+import {useOutletContext} from "react-router-dom";
 
 const Courses = () => {
     const { t } = useTranslation("courses");
+    const { openModal } = useOutletContext();
     return (
         <div className={styles.wrapper}>
             <div className={styles.courses_container}>
@@ -26,7 +28,7 @@ const Courses = () => {
                             <h2>{t(item.name)}</h2>
                             <p>{t(item.description)}</p>
                         </div>
-                        <button className={styles.btn}>{t("enroll")}</button>
+                        <button onClick={() => openModal({ name: t(item.name)})} className={styles.btn}>{t("enroll")}</button>
                     </div>)}
                 </div>
             </div>

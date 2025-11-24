@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './FeaturedEvent.module.css'
 import event from './event.jpg'
 import {useTranslation} from "react-i18next";
+import {useOutletContext} from "react-router-dom";
 
 const FeaturedEvent = () => {
     const { t } = useTranslation("featuredEvent");
+    const { openModal } = useOutletContext();
     return (
         <div className={styles.container}>
             <p className='main-p'>{t("dontMiss")}</p>
@@ -24,7 +26,7 @@ const FeaturedEvent = () => {
                     </div>
                     <h3 className={styles.name}>{t("name")}</h3>
                     <p className={styles.description}>{t("description")}</p>
-                    <button>{t("button")}</button>
+                    <button onClick={() => openModal({ name: t("name")})}>{t("button")}</button>
                 </div>
             </div>
         </div>

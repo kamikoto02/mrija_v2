@@ -29,14 +29,22 @@ const Membership = () => {
                                 <li>{t("communitySupport")}</li>
                                 <li>{t("newsletter")}</li>
                             </ul>
-                            <button className={styles.btn}>{t("subscribe")}</button>
+                            <a className={styles.btn} href="https://buy.stripe.com/fZu7sNffm0t9aIX2n0djO03"
+                               target="_blank"
+                               style={{
+                                   display: "block",
+                                   width: "100%",
+                                   height: "100%",
+                               }}>
+                                {t("subscribe")}
+                            </a>
                         </div>
                     </div>
                     <div className={`${styles.card} ${styles.middle_card}`}>
                         <span className={styles.popular}>{t("popular")}</span>
                         <img src={family} alt="family"/>
                         <p className={styles.name}>
-                            {t("family")}
+                        {t("family")}
                         </p>
                         <p className={styles.price_container}><span className={styles.price}>100 NOK</span>/{t("year")}</p>
                         <div>
@@ -49,7 +57,16 @@ const Membership = () => {
                                 <li>{t("discounts")}</li>
                                 <li>{t("prioritySupport")}</li>
                             </ul>
-                            <button className={styles.btn}>{t("subscribe")}</button>
+                            <a  className={styles.btn} href="https://buy.stripe.com/9B64gBd7e7VB3gv6DgdjO04"
+                                target="_blank"
+                                style={{
+                                    display: "block",
+                                    width: "100%",
+                                    height: "100%",
+
+                                }}>
+                                {t("subscribe")}
+                            </a>
                         </div>
                     </div>
                     <div className={styles.card}>
@@ -67,7 +84,12 @@ const Membership = () => {
                                 <li>{t("sponsor")}</li>
                                 <li>{t("volunteer")}</li>
                             </ul>
-                            <button className={styles.btn}>{t("contactUs")}</button>
+                            <button
+                                onClick={() => {
+                                    const el = document.getElementById("footer");
+                                    el?.scrollIntoView({ behavior: "smooth" });
+                                }}
+                                className={styles.btn}>{t("contactUs")}</button>
                         </div>
                     </div>
                 </div>

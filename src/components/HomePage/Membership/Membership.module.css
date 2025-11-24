@@ -106,6 +106,7 @@
     background-color: #0057B8;
     color: #fff;
     border-radius: 10px;
+    display: inline-block;
 }
 .popular{
     position: absolute;

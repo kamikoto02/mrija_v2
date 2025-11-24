@@ -8,7 +8,7 @@ import {useTranslation} from "react-i18next";
 const Footer = () => {
     const { t } = useTranslation("footer");
     return (
-        <footer className={styles.footer_wrapper}>
+        <footer id='footer' className={styles.footer_wrapper}>
             <div className={styles.footer_container}>
                 <div className={styles.footer_content}>
                     <img className={styles.logo} src={logo} alt="logo"/>

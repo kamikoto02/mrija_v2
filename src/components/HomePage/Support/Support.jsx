@@ -22,7 +22,6 @@ const Support = () => {
                         <p className={styles.card_desc}>
                             {t("mentorshipDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">{t("findMentor")}</a></p>
                     </div>
                     <div className={styles.card}>
                         <img src={house} alt="house"/>
@@ -30,7 +29,6 @@ const Support = () => {
                         <p className={styles.card_desc}>
                             {t("housingDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">{t("learnMore")}</a></p>
                     </div>
                     <div className={styles.card}>
                         <img src={job} alt="job"/>
@@ -38,7 +36,6 @@ const Support = () => {
                         <p className={styles.card_desc}>
                             {t("jobMarketDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">{t("explore")}</a></p>
                     </div>
                     <div className={styles.card}>
                         <img src={help} alt="help"/>
@@ -46,7 +43,6 @@ const Support = () => {
                         <p className={styles.card_desc}>
                             {t("legalDesc")}
                         </p>
-                        <p className={styles.card_link}><a href="#">{t("getHelp")}</a></p>
                     </div>
                 </div>
                 <div className={styles.image_wrapper}>

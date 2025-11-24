@@ -54,17 +54,31 @@
 .row2 {
   max-height: 505px;
 }
-.image1_wrapper img, .image2_wrapper img, .image3_wrapper img {
+.image1_wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center center;
     border-radius: 10px;
-
-    box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.18);
-    -webkit-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.18);
-    -moz-box-shadow: -1px 0px 8px 0px rgba(0,0,0,0.18);
 }
+.image2_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+.image3_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 10px;
+}
+
+
+
+
 
 .span {
     font-weight: 600;
