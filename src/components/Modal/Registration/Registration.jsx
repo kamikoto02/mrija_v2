@@ -7,6 +7,8 @@ const Registration = ({selectedEventName, onClose, onSuccesOpen}) => {
     const iframeRef = useRef(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
     const {t} = useTranslation('register');
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -43,6 +45,7 @@ const Registration = ({selectedEventName, onClose, onSuccesOpen}) => {
                     <p>{t("phone")}</p>
                     <input type="number" name="entry.675187710" placeholder='(+47) xxx-xx-xxx' required/>
                 </label>
+                <input style={{display: "none"}} name="entry.195333573" value={selectedEventName} type="text"/>
                 <div className={styles.btn_container}>
                     <button type="submit">{t("register")}</button>
                 </div>

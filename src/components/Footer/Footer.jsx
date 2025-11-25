@@ -4,6 +4,7 @@ import logo from './Logo.png'
 import instagram from '../../images/footer/instagram.svg'
 import facebook from '../../images/footer/facebook.svg'
 import {useTranslation} from "react-i18next";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     const { t } = useTranslation("footer");
@@ -39,12 +40,6 @@ const Footer = () => {
                 </div>
                 <div className={styles.footer_bottom}>
                     <p className={styles.rights}>{t("rights")}</p>
-                    <nav className={styles.footer_nav}>
-                        <li>{t("home")}</li>
-                        <li className={styles.li_about}>{t("about")}</li>
-                        <li className={styles.li_events}>{t("events")}</li>
-                        <li>{t("contact")}</li>
-                    </nav>
                     <div className={styles.footer_policy}>
                         <a className={styles.terms}>{t("terms")}</a>
                         <a>{t("privacy")}</a>

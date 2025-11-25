@@ -96,6 +96,14 @@
     line-height: 100%;
     padding: 12px 16px;
     border-radius: 10px;
+    transition: 0.2s ease;
+}
+.join_btn:hover {
+    background-color: #366CCF;
+    color: #fff;
+}
+.join_btn:active {
+    background-color: #184EB1;
 }
 .lang_btn {
     display: flex;

@@ -109,9 +109,9 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <button className={styles.join_btn}>
+                    <Link to='/#membership' className={styles.join_btn}>
                         {t("join")}
-                    </button>
+                    </Link>
                 </div>
             </div>
             <AnimatePresence>

@@ -107,6 +107,14 @@
     width: 100%;
     padding: 12px 0;
     border-radius: 10px;
+    transition: 0.2s ease;
+}
+.btn:hover {
+    background-color: #366CCF;
+    color: #fff;
+}
+.btn:active {
+    background-color: #184EB1;
 }
 @media (max-width: 1038px) {
     .courses_content {

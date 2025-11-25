@@ -59,7 +59,14 @@
     color: white;
     background-color: #0057B8;
     border-radius: 10px;
-
+    transition: 0.2s ease;
+}
+.form button:hover {
+    background-color: #366CCF;
+    color: #fff;
+}
+.form button:active {
+    background-color: #184EB1;
 }
 @media (max-width: 608px) {
     .input_wrapper {

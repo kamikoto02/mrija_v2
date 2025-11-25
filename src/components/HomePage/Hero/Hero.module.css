@@ -61,11 +61,27 @@
 .member_btn {
     background-color: #0057B8;
     color: #fff;
+    transition: 0.2s ease;
+}
+.member_btn:hover {
+    background-color: #366CCF;
+    color: #fff;
+}
+.member_btn:active {
+    background-color: #184EB1;
 }
 .learn_btn {
     color: #0057B8;
     background-color: inherit;
     border: 1px solid #0057B8;
+    transition: 0.2s ease;
+}
+.learn_btn:hover {
+    background-color: #0057B8;
+    color: #fff;
+}
+.learn_btn:active {
+    opacity: 0.7;
 }
 .image_wrapper {
     max-width: 1044px;

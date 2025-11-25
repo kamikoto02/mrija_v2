@@ -107,6 +107,14 @@
     color: #fff;
     border-radius: 10px;
     display: inline-block;
+    transition: 0.2s ease;
+}
+.btn:hover {
+    background-color: #366CCF;
+    color: #fff;
+}
+.btn:active {
+    background-color: #184EB1;
 }
 .popular{
     position: absolute;

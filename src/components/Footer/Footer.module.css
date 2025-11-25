@@ -100,7 +100,7 @@
     justify-content: space-between;
     padding: 0 4px;
 }
-.footer_nav li {
+.link {
     font-weight: 600;
     font-size: 14px;
     line-height: 100%;
@@ -125,9 +125,6 @@
 }
 .li_about {
     border-left: 1px solid #D9D9D9;
-    border-right: 1px solid #D9D9D9;
-}
-.li_events {
     border-right: 1px solid #D9D9D9;
 }
 .terms {
@@ -172,7 +169,7 @@
     .footer_content {
         border-bottom: none;
     }
-    .footer_nav li {
+    .link {
         margin: 0 auto;
     }
 }
@@ -181,7 +178,7 @@
         margin: 0 auto;
         width: 320px;
     }
-    .footer_nav li {
+    .link {
         padding: 0 10px;
     }
 

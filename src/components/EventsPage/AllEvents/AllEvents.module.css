@@ -118,7 +118,14 @@
     background-color: #0057B8;
     padding: 11px 0;
     border-radius: 10px;
-
+    transition: 0.2s ease;
+}
+.card_content button:hover {
+    background-color: #366CCF;
+    color: #fff;
+}
+.card_content button:active {
+    background-color: #184EB1;
 }
 @media (max-width: 1028px) {
     .card {

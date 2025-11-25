@@ -60,16 +60,13 @@ const Events = () => {
                                             alt="event"
                                         />
                                     </div>
-
                                     <div className={styles.card_content}>
                                         <div className={styles.duration}>
                                             <span className={styles.day}>{t(event.dayKey)}</span>
                                             <span className={styles.time}>{t(event.timeKey)}</span>
                                         </div>
-
                                         <h3 className={styles.name}>{t(event.nameKey)}</h3>
                                         <p className={styles.description}>{t(event.descriptionKey)}</p>
-
                                         <button onClick={() => openModal({ name: t(event.nameKey)})} className={styles.btn}>{t("button")}</button>
                                     </div>
                                 </div>

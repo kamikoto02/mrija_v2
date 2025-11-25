@@ -5,5 +5,6 @@
   "name": "Navn",
   "email": "E-post",
   "message": "Melding",
-  "send": "Send"
+  "send": "Send",
+  "emailError" : "E-posten må inneholde tegnet \"@\"."
 }
