@@ -33,7 +33,7 @@ const Footer = () => {
                             <h3 >{t("socials")}</h3>
                             <div className={styles.socials}>
                                 <a href="#"><img className={styles.instagram} src={instagram} alt="instagram"/></a>
-                                <a href='#'><img className={styles.facebook} src={facebook} alt="facebook"/></a>
+                                <a href='https://www.facebook.com/groups/737201494718405/about'><img className={styles.facebook} src={facebook} alt="facebook"/></a>
                             </div>
                         </div>
                     </div>

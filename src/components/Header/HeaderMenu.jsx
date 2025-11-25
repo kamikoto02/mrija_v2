@@ -40,9 +40,9 @@ const HeaderMenu = ({closeMenu}) => {
                         </Link>
                     </div>
                 </nav>
-                <button className={styles.menu_join_btn}>
+                <a href="/#membership" className={styles.menu_join_btn} onClick={closeMenu}>
                     Join Us
-                </button>
+                </a>
             </div>
         </motion.div>
     );
