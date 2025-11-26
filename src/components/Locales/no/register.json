@@ -5,5 +5,6 @@
   "name": "Navn",
   "surname": "Etternavn",
   "phone": "Telefonnummer",
-  "register": "Register"
+  "register": "Register",
+  "notCorrectPhone": "Skriv inn minst 8 sifre"
 }

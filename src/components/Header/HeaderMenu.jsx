@@ -41,7 +41,7 @@ const HeaderMenu = ({closeMenu}) => {
                     </div>
                 </nav>
                 <a href="/#membership" className={styles.menu_join_btn} onClick={closeMenu}>
-                    Join Us
+                    {t("join")}
                 </a>
             </div>
         </motion.div>

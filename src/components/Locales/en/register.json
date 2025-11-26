@@ -5,5 +5,6 @@
   "name": "Name",
   "surname": "Surname",
   "phone": "Phone number",
-  "register": "Register"
+  "register": "Register",
+  "notCorrectPhone": "Enter at least 8 digits"
 }
